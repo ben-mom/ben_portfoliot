@@ -1,0 +1,141 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .logo .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #00b4d8;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+
+    .profile-pic {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .info {
+      max-width: 500px;
+    }
+
+    .info h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+
+    .info p {
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-bottom: 1.8rem;
+      color: #555;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+       a{
+        text-decoration: none;
+       }
+    }
+
+    .btn {
+      padding: 0.8rem 1.4rem;
+      border-radius: 50px;
+      font-weight: 600;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .profil { background-color: #c8e6c9; }
+    .projets { background-color: #ffcc80; }
+    .musique { background-color: #80deea; }
+    .contact { background-color: #e0e0e0; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        text-align: center;
+      }
+      .info h1 {
+        font-size: 2rem;
+      }
+      .info p {
+        font-size: 0.95rem;
+      }
+    }
